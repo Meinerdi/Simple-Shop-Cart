@@ -1,4 +1,5 @@
 import React from 'react'
+import s from './Cart.module.css'
 
 export const Cart = (props) => {
 
@@ -23,17 +24,24 @@ export const Cart = (props) => {
     }
 
     return (
-        <div>
+        <div className={s.cart}>
             {props.inCart.length === 0 ? "Cart is empty" : props.inCart.map(item => {
                 return (
-                    <div key={item.id}>
-                        <span>{item.name} {item.price}$</span>
-                        <button disabled={
-                            props.inCart.find(product => product.id === item.id).count === 1 ? true : false
-                        } onClick={() => onDecreaseButton(item)}>-</button>
-                        {item.count}
-                        <button onClick={() => onIncreaseButton(item)}>+</button>
-                        <button onClick={() => onDeleteButton(item)}>Delete</button>
+                    <div key={item.id} className={s.productItem}>
+                        <img src={item.image} alt="item" className={s.itemImage} />
+                        <div className={s.infoHolder}>
+                            <span>{item.name}</span>
+                            <span>{item.price}$</span>
+                            <div className={s.buttonHolder}>
+                                <button disabled={
+                                    props.inCart.find(product => product.id === item.id).count === 1 ? true : false
+                                } onClick={() => onDecreaseButton(item)}>-</button>
+                                {item.count}
+                                <button onClick={() => onIncreaseButton(item)}>+</button>
+                                <button onClick={() => onDeleteButton(item)}>Delete</button>
+                            </div>
+
+                        </div>
                     </div>
                 )
             })}

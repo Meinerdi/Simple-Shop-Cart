@@ -1,0 +1,15 @@
+.itemImage {
+    width: 200px;
+}
+
+.productList {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

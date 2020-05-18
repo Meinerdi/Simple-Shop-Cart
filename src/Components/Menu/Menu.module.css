@@ -1,0 +1,26 @@
+.cartIcon {
+    width: 30px;   
+}
+
+.menu {
+    background: rgba(56, 145, 151, 0.76);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.cartIconHolder {
+    display: flex;
+    align-items: center;
+}
+
+.cartLink {
+    margin: 0 5px 0 0;
+}

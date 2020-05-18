@@ -1,0 +1,33 @@
+.productItem {
+    border: 1px solid rgba(134, 120, 120, 0.692);
+    margin: 0 0 5px;
+    display: flex;
+    padding: 5px 0;
+}
+
+.itemImage {
+    width: 90px;
+}
+
+.cart {
+    padding: 5px 0 0;
+}
+
+.infoHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.buttonHolder * {
+    margin: 0 3px 0 ;
+}
+
+.buttonHolder *:first-child {
+    margin: 0 3px 0 0;
+}
+
+.buttonHolder {
+    margin-top: auto;
+}
