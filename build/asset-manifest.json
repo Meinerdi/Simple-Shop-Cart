@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Shop-from-Zenbit-course/static/css/main.7c9edd7a.chunk.css",
+    "main.js": "/Shop-from-Zenbit-course/static/js/main.60b8e5a9.chunk.js",
+    "main.js.map": "/Shop-from-Zenbit-course/static/js/main.60b8e5a9.chunk.js.map",
+    "runtime-main.js": "/Shop-from-Zenbit-course/static/js/runtime-main.a655d7ee.js",
+    "runtime-main.js.map": "/Shop-from-Zenbit-course/static/js/runtime-main.a655d7ee.js.map",
+    "static/js/2.ae048b0f.chunk.js": "/Shop-from-Zenbit-course/static/js/2.ae048b0f.chunk.js",
+    "static/js/2.ae048b0f.chunk.js.map": "/Shop-from-Zenbit-course/static/js/2.ae048b0f.chunk.js.map",
+    "index.html": "/Shop-from-Zenbit-course/index.html",
+    "precache-manifest.6f544b0ebdb9267b8e89d86f195c9d4f.js": "/Shop-from-Zenbit-course/precache-manifest.6f544b0ebdb9267b8e89d86f195c9d4f.js",
+    "service-worker.js": "/Shop-from-Zenbit-course/service-worker.js",
+    "static/css/main.7c9edd7a.chunk.css.map": "/Shop-from-Zenbit-course/static/css/main.7c9edd7a.chunk.css.map",
+    "static/js/2.ae048b0f.chunk.js.LICENSE.txt": "/Shop-from-Zenbit-course/static/js/2.ae048b0f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a655d7ee.js",
+    "static/js/2.ae048b0f.chunk.js",
+    "static/css/main.7c9edd7a.chunk.css",
+    "static/js/main.60b8e5a9.chunk.js"
+  ]
+}
