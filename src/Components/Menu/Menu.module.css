@@ -1,19 +1,19 @@
-.cartIcon {
-    width: 30px;   
+.header {
+    background: rgb(19, 18, 18);
+    display: flex;
+    padding: 20px 10px;
+    color:#fff;
 }
 
 .menu {
-    background: rgba(56, 145, 151, 0.76);
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
     align-items: center;
+    width: 100%;
 }
 
-.menu a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
+.cartIcon {
+    width: 30px;   
 }
 
 .cartIconHolder {
@@ -21,6 +21,16 @@
     align-items: center;
 }
 
+.menu a {
+
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 .cartLink {
     margin: 0 5px 0 0;
+}
+
+.logo {
+    width: 60px;
 }
