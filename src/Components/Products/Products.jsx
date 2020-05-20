@@ -20,7 +20,7 @@ export const Products = (props) => {
                     <div className={s.addButtonHolder}>
                         <button id={item.id} onClick={() => {
                             onProductBuy(item)
-                            toast('Added to cart', {
+                            toast(`${item.name} was added`, {
                                 className: "toast",
                                 position: "bottom-right",
                                 autoClose: 600,
