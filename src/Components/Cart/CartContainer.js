@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { connect } from "react-redux";
+import { clearCart, decreaseProductCount, deleteFromCart, increaseProductCount } from '../../actions/cart';
 import { Cart } from "./Cart";
-import { increaseProductCount, decreaseProductCount, deleteFromCart, clearCart } from '../../store/cart'
 
 const CartContainer = (props) => {
     return <Cart {...props} />
@@ -12,4 +12,6 @@ let mapStateToProps = (state) => ({
     totalPrice: state.cart.totalPrice
 })
 
-export default connect(mapStateToProps, { increaseProductCount, decreaseProductCount, deleteFromCart, clearCart })(CartContainer)
+const actions = { increaseProductCount, decreaseProductCount, deleteFromCart, clearCart }
+
+export default connect(mapStateToProps, actions)(CartContainer)
