@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Menu from './Components/Menu/Menu';
+import Menu from './components/Menu/Menu';
 import s from '../src/style.module.css'
 
-import ProductsContainer from './Components/Products/ProductsContainer';
-import CartContainer from './Components/Cart/CartContainer';
+import ProductsContainer from './components/Products/ProductsContainer';
+import CartContainer from './components/Cart/CartContainer';
 
 
 let App = () => {

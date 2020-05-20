@@ -1,10 +1,12 @@
-import { NavLink } from "react-router-dom"
 import React from 'react'
 import { connect } from "react-redux"
+import { NavLink } from "react-router-dom"
 import cart from '../../assets/images/cart.png'
 import s from './Menu.module.css'
 
 const Menu = (props) => {
+    const { totalCount } = props
+
     return (
         <ul className={s.menu}>
             <li><NavLink to={'/products'}>Products</NavLink></li>
@@ -12,7 +14,7 @@ const Menu = (props) => {
                 <NavLink to={'/cart'} className={s.cartLink}>
                     <img src={cart} alt={'cart'} className={s.cartIcon} />
                 </NavLink>
-                <span>{props.totalCount}</span>
+                <span>{totalCount}</span>
             </li>
         </ul>
     )
