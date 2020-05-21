@@ -18,12 +18,12 @@ export const Products = (props) => {
                     <span>{item.name}</span>
                     <span>{item.price} $ </span>
                     <div className={s.addButtonHolder}>
-                        <button id={item.id} onClick={() => {
+                        <button className={s.buyButton} onClick={() => {
                             onProductBuy(item)
                             toast(`${item.name} was added`, {
                                 className: "toast",
                                 position: "bottom-right",
-                                autoClose: 600,
+                                autoClose: 500,
                                 hideProgressBar: true,
                                 closeOnClick: false,
                                 pauseOnHover: true,
@@ -42,7 +42,7 @@ export const Products = (props) => {
                             pauseOnFocusLoss
                             draggable
                             pauseOnHover={false}
-                            limit={2}
+                            limit={1}
                         />
                     </div>
                 </li>

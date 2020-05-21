@@ -1,15 +1,10 @@
 .header {
-    background: rgb(19, 18, 18);
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    padding: 20px 10px;
+    padding: 20px 49px;
     color:#fff;
-}
-
-.menu {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
 }
 
 .cartIcon {
@@ -32,5 +27,5 @@
 }
 
 .logo {
-    width: 60px;
+    width: 100px;
 }

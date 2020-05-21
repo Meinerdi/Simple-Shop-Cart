@@ -23,16 +23,25 @@ button {
 }
 
 .toast {
-    background: rgba(0, 0, 0, 0.829) !important;
-    color: rgb(185, 204, 185) !important;
+    background: rgb(19, 18, 18) !important;
+    color: rgb(252, 252, 252) !important;
     text-align: center;
 }
 
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
+.wrapperMenu {
+    background: rgb(19, 18, 18);
 }
 
 a {
     color: inherit
+}
+
+.wrapperContent {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

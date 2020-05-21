@@ -1,21 +1,28 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import Menu from './components/Menu/Menu';
-import '../src/style.css'
-
-import ProductsContainer from './components/Products/ProductsContainer';
+import { Route, Switch } from 'react-router-dom';
+import '../src/style.css';
 import CartContainer from './components/Cart/CartContainer';
+import Header from './components/Header/Header';
+import ProductsContainer from './components/Products/ProductsContainer';
+import { Sidebar } from './components/Sidebar/Sidebar';
+
 
 
 let App = () => {
   return (
-    <div className="wrapper">
-      <Menu />
-      <Switch>
-        <Route path={'/cart'} component={CartContainer} />
-        <Route path={'/products'} component={ProductsContainer} />
-      </Switch>
-    </div>
+    <>
+      <div className="wrapperMenu">
+        <Header />
+      </div>
+      <div className="wrapperContent">
+        <Sidebar />
+        <Switch>
+          <Route path={'/'} component={ProductsContainer} exact />
+          <Route path={'/cart'} component={CartContainer} />
+          <Route path={'/products'} component={ProductsContainer} />
+        </Switch>
+      </div>
+    </>
   );
 }
 

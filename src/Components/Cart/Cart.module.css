@@ -1,16 +1,20 @@
 .productItem {
-    border: 1px solid rgba(134, 120, 120, 0.692);
+    border: 1px solid rgba(19, 18, 18, 0.288);
     margin: 0 0 5px;
     display: flex;
     padding: 5px 0;
+    color: rgb(19, 18, 18);
 }
 
 .itemImage {
     width: 90px;
+    padding: 3px;
+    margin: 0 5px 0 0;
 }
 
 .cart {
-    padding: 5px 0 0;
+    padding: 20px 0 0;
+    width: 100%;
 }
 
 .infoHolder {
