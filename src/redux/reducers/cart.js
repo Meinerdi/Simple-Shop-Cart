@@ -4,7 +4,7 @@ import {
     DECREASE_PRODUCT_COUNT,
     DELETE_PRODUCT_FROM_CART,
     CLEAR_CART
-} from './../action-types/cart'
+} from '../actions/cart'
 
 let initialState = {
     inCart: [

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
-import { addToCart } from '../../actions/cart';
+import { addToCart } from '../../redux/actions/cart';
 import { Products } from "./Products";
 
 const ProductsContainer = (props) => {

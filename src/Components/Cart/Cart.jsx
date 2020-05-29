@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Cart.module.css'
 import fire from '../../firebase'
+import emptyCartImage from '../../assets/images/empty-cart.png'
 
 export const Cart = (props) => {
 
@@ -41,7 +42,7 @@ export const Cart = (props) => {
 
     return (
         <div className={s.cart}>
-            {!inCart.length ? "Cart is empty" : inCart.map(item => (
+            {!inCart.length ? <img src={emptyCartImage} alt="empty-cart" className={s.emptyCart} /> : inCart.map(item => (
                 <div key={item.id} className={s.productItem}>
                     <img src={item.image} alt="item" className={s.itemImage} />
                     <div className={s.infoHolder}>

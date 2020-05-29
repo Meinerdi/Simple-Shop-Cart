@@ -1,6 +1,6 @@
 import { combineReducers, createStore } from "redux";
-import { cart } from './cart'
-import { products } from './products'
+import { cart } from './reducers/cart'
+import { products } from './reducers/products'
 
 let reducers = combineReducers({
     cart: cart,
