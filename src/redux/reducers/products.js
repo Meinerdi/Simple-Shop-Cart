@@ -1,3 +1,5 @@
+import { SET_PRODUCTS } from "../actions/products"
+
 let initialState = {
     products: [
         { id: 1, name: 'Siemens S65', price: 370, image: "https://sidex.ru/images_offers/634/634918/siemens_s65_2.jpg" },
@@ -11,6 +13,11 @@ let initialState = {
 
 export const products = (state = initialState, action) => {
     switch (action.type) {
+        case SET_PRODUCTS:
+            return {
+                ...state,
+                products: action.products
+            }
         default:
             return state
     }
