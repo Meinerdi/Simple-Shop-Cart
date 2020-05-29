@@ -1,7 +1,9 @@
 import React from 'react'
 import s from './Cart.module.css'
+import fire from '../../firebase'
 
 export const Cart = (props) => {
+
     const {
         increaseProductCount,
         decreaseProductCount,
@@ -31,6 +33,12 @@ export const Cart = (props) => {
         alert(JSON.stringify(inCart))
     }
 
+
+    let handleSubmit = () => {
+        fire.database().ref('products').once('value').then(snap => console.log(snap.val()))
+        // console.log(firebase)
+    }
+
     return (
         <div className={s.cart}>
             {!inCart.length ? "Cart is empty" : inCart.map(item => (
@@ -56,6 +64,8 @@ export const Cart = (props) => {
             {!inCart.length ? null : <button onClick={onClearButton}>Clear Cart</button>}
             {!inCart.length ? null : <div>Total price: {totalPrice} $</div>}
             {!inCart.length ? null : <button onClick={onCheckoutButton}>Checkout</button>}
+
+            <button onClick={handleSubmit}>send</button>
 
         </div>
     )
