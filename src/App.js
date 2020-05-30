@@ -11,7 +11,7 @@ import { Sidebar } from './components/Sidebar/Sidebar';
 let App = () => {
   return (
     <>
-      <div className="wrapperMenu">
+      <div className="wrapperHeader">
         <Header />
       </div>
       <div className="wrapperContent">

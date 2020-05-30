@@ -1,5 +1,6 @@
 .itemImage {
     width: 200px;
+    margin: 0 0 10px;
 }
 
 .productList {
@@ -21,7 +22,6 @@
     margin: 0 4px 8px;
 }
 
-.addButtonHolder {
+.itemName {
     margin-top: auto;
 }
-
